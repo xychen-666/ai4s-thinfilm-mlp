@@ -1,0 +1,107 @@
+{
+  "identity": {
+    "student_name": "陈新堉",
+    "student_id": "2023270069"
+  },
+  "target_wavelength_nm": 520,
+  "seed": 270069,
+  "design_seed": 270070,
+  "design_objective": "maximize reflectance at target wavelength",
+  "setup": {
+    "n_samples": 5000,
+    "split": [
+      4000,
+      500,
+      500
+    ],
+    "n_candidates": 10000,
+    "epochs": 300,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "normalization": "(thickness - 40) * 2 / 140 - 1"
+  },
+  "training_size_results": [
+    {
+      "training_samples": 500,
+      "best_epoch": 299,
+      "validation_mse": 0.0012074242113158107,
+      "test_mse": 0.00107528546652764,
+      "test_mae": 0.022646272274738553,
+      "test_rmse": 0.0327915456562761,
+      "test_r2": 0.9669068811421916,
+      "target_520nm_mae": 0.02514983725190278,
+      "predictions_outside_0_1": 81,
+      "training_seconds": 4.537134400000014
+    },
+    {
+      "training_samples": 1000,
+      "best_epoch": 298,
+      "validation_mse": 0.00047014604206196964,
+      "test_mse": 0.0004907360297065708,
+      "test_mae": 0.015822435838051367,
+      "test_rmse": 0.022152562599089317,
+      "test_r2": 0.9848970470964037,
+      "target_520nm_mae": 0.017974261834441122,
+      "predictions_outside_0_1": 104,
+      "training_seconds": 4.429877999999917
+    },
+    {
+      "training_samples": 2000,
+      "best_epoch": 291,
+      "validation_mse": 0.0002072034403681755,
+      "test_mse": 0.00021508177947474863,
+      "test_mae": 0.010383280717705298,
+      "test_rmse": 0.014665666690428656,
+      "test_r2": 0.9933806164838332,
+      "target_520nm_mae": 0.012854771934650415,
+      "predictions_outside_0_1": 92,
+      "training_seconds": 29.994827700000315
+    },
+    {
+      "training_samples": 4000,
+      "best_epoch": 297,
+      "validation_mse": 0.00010664526780601591,
+      "test_mse": 0.0001040024689327719,
+      "test_mae": 0.0074205876950903926,
+      "test_rmse": 0.010198160075855443,
+      "test_r2": 0.9967992071193782,
+      "target_520nm_mae": 0.008662135306151614,
+      "predictions_outside_0_1": 92,
+      "training_seconds": 119.04813620000004
+    }
+  ],
+  "representative_test_indices": [
+    299,
+    189,
+    22
+  ],
+  "failure_test_index": 390,
+  "failure_spectrum_mae": 0.01987539517130478,
+  "best_design": {
+    "tmm_rank": 1,
+    "mlp_rank": 2,
+    "candidate_index": 8667,
+    "d1_nm": 168.03087295416063,
+    "d2_nm": 89.46564528806579,
+    "d3_nm": 168.17302151724653,
+    "d4_nm": 68.97580320038315,
+    "mlp_r_target": 0.6629270315170288,
+    "tmm_r_target": 0.6542560861850057,
+    "absolute_error": 0.008670945332023061
+  },
+  "screening_audit": {
+    "best_tmm_r_among_all_10000": 0.6560806899835488,
+    "best_tmm_candidate_index": 7958,
+    "selected_best_tmm_rank_among_all_10000": 5,
+    "selected_to_pool_best_ratio": 0.9972189338500591,
+    "mlp_10000_prediction_seconds": 0.01441160000013042,
+    "tmm_10000_single_wavelength_seconds": 0.007626199999776873
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "torch": "2.14.0+cpu",
+    "matplotlib": "3.11.2",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}
