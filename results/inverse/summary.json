@@ -1,0 +1,392 @@
+{
+  "identity": {
+    "student_name": "陈新堉",
+    "student_id": "2023270069"
+  },
+  "task": "41-point target reflectance spectrum -> four film thicknesses",
+  "architecture": [
+    41,
+    128,
+    128,
+    64,
+    4
+  ],
+  "split": [
+    4000,
+    500,
+    500
+  ],
+  "seed": 270069,
+  "design_seed": 270070,
+  "target_wavelength_nm": 520,
+  "epochs": 300,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "source_dataset_sha256": "3700acae32eb2c883ce0db6f3d1224d59571db853dd14c5011bfb44a6f72b20c",
+  "input_scaling": "raw reflectance in [0,1]",
+  "thickness_scaling": "2*(d-40)/140-1",
+  "supervised_output": "linear; raw outputs saved; feasibility projection reported separately",
+  "physics_output": "tanh normalized thickness; exact TMM spectrum loss, no thickness labels used",
+  "sizes_results": [
+    {
+      "thickness_mae_nm": 17.725865144261387,
+      "thickness_rmse_nm": 26.34220100523255,
+      "thickness_r2": 0.5761185952012172,
+      "layer_mae_nm": [
+        8.971952590258725,
+        14.79616242846332,
+        10.922941703621683,
+        36.212403854701805
+      ],
+      "layer_rmse_nm": [
+        13.749932659938766,
+        20.063037433571182,
+        16.6706882897925,
+        43.65945771457935
+      ],
+      "spectral_mse": 0.008748535847780556,
+      "spectral_mae": 0.0629066441995106,
+      "spectral_rmse": 0.09353360811911704,
+      "target_520nm_mae": 0.07040320973213693,
+      "mean_spectrum_mae": 0.06290664419951059,
+      "median_spectrum_mae": 0.048680620395547936,
+      "p90_spectrum_mae": 0.12412341319233701,
+      "max_spectrum_mae": 0.3511907815957924,
+      "spectra_mae_below_0_01_fraction": 0.006,
+      "spectra_mae_below_0_02_fraction": 0.106,
+      "out_of_bounds_thickness_count": 0,
+      "training_samples": 500,
+      "best_epoch": 295,
+      "validation_loss": 0.13918156921863556,
+      "raw_thickness_mae_nm": 17.84234917212394,
+      "raw_thickness_rmse_nm": 26.463244844421652,
+      "raw_out_of_bounds_count": 33,
+      "training_seconds": 2.646455600000081
+    },
+    {
+      "thickness_mae_nm": 15.317009184249928,
+      "thickness_rmse_nm": 23.665457552076777,
+      "thickness_r2": 0.6578866217107138,
+      "layer_mae_nm": [
+        7.351305770572045,
+        12.317106160576472,
+        7.817055867416519,
+        33.78256893843466
+      ],
+      "layer_rmse_nm": [
+        11.329599348108085,
+        16.355720429930457,
+        11.653579123854726,
+        41.334491723377376
+      ],
+      "spectral_mse": 0.0058761805766934135,
+      "spectral_mae": 0.05207661874671642,
+      "spectral_rmse": 0.07665624943012418,
+      "target_520nm_mae": 0.05948117562603633,
+      "mean_spectrum_mae": 0.052076618746716416,
+      "median_spectrum_mae": 0.04200825140770388,
+      "p90_spectrum_mae": 0.09625605745553838,
+      "max_spectrum_mae": 0.34004372891689616,
+      "spectra_mae_below_0_01_fraction": 0.02,
+      "spectra_mae_below_0_02_fraction": 0.13,
+      "out_of_bounds_thickness_count": 0,
+      "training_samples": 1000,
+      "best_epoch": 298,
+      "validation_loss": 0.09602800011634827,
+      "raw_thickness_mae_nm": 15.409265527137807,
+      "raw_thickness_rmse_nm": 23.709740672310428,
+      "raw_out_of_bounds_count": 27,
+      "training_seconds": 3.3094372000005023
+    },
+    {
+      "thickness_mae_nm": 12.236927818822315,
+      "thickness_rmse_nm": 20.18010083537154,
+      "thickness_r2": 0.7512363558045214,
+      "layer_mae_nm": [
+        6.258604439581043,
+        9.364816058330032,
+        6.027232848405013,
+        27.297057928973164
+      ],
+      "layer_rmse_nm": [
+        9.155831296339548,
+        13.516023235476451,
+        9.124346646275168,
+        35.765626603663605
+      ],
+      "spectral_mse": 0.0036931661339001105,
+      "spectral_mae": 0.04048199271613545,
+      "spectral_rmse": 0.06077142530745935,
+      "target_520nm_mae": 0.043903810593611196,
+      "mean_spectrum_mae": 0.04048199271613545,
+      "median_spectrum_mae": 0.03328506488554919,
+      "p90_spectrum_mae": 0.07130068653199088,
+      "max_spectrum_mae": 0.2659785127915758,
+      "spectra_mae_below_0_01_fraction": 0.052,
+      "spectra_mae_below_0_02_fraction": 0.248,
+      "out_of_bounds_thickness_count": 0,
+      "training_samples": 2000,
+      "best_epoch": 296,
+      "validation_loss": 0.06716951727867126,
+      "raw_thickness_mae_nm": 12.285435349988392,
+      "raw_thickness_rmse_nm": 20.230522451394712,
+      "raw_out_of_bounds_count": 26,
+      "training_seconds": 5.545476399999643
+    },
+    {
+      "thickness_mae_nm": 10.094460770139932,
+      "thickness_rmse_nm": 16.659175532324664,
+      "thickness_r2": 0.8304697295726726,
+      "layer_mae_nm": [
+        5.133041826618356,
+        8.451590792809986,
+        4.9163259739324,
+        21.876884487198986
+      ],
+      "layer_rmse_nm": [
+        8.00835489819841,
+        12.185307048236542,
+        6.961706119343239,
+        29.138148697880865
+      ],
+      "spectral_mse": 0.0024739823285372968,
+      "spectral_mae": 0.03374754566098743,
+      "spectral_rmse": 0.04973914282069301,
+      "target_520nm_mae": 0.037300418132701296,
+      "mean_spectrum_mae": 0.033747545660987435,
+      "median_spectrum_mae": 0.02762019724106924,
+      "p90_spectrum_mae": 0.06489137727937086,
+      "max_spectrum_mae": 0.26319656153210963,
+      "spectra_mae_below_0_01_fraction": 0.066,
+      "spectra_mae_below_0_02_fraction": 0.33,
+      "out_of_bounds_thickness_count": 0,
+      "training_samples": 4000,
+      "best_epoch": 290,
+      "validation_loss": 0.04974581301212311,
+      "raw_thickness_mae_nm": 10.189587877760172,
+      "raw_thickness_rmse_nm": 16.765729826327558,
+      "raw_out_of_bounds_count": 31,
+      "training_seconds": 11.1490773000005
+    }
+  ],
+  "methods": {
+    "supervised": {
+      "thickness_mae_nm": 10.094460770139932,
+      "thickness_rmse_nm": 16.659175532324664,
+      "thickness_r2": 0.8304697295726726,
+      "layer_mae_nm": [
+        5.133041826618356,
+        8.451590792809986,
+        4.9163259739324,
+        21.876884487198986
+      ],
+      "layer_rmse_nm": [
+        8.00835489819841,
+        12.185307048236542,
+        6.961706119343239,
+        29.138148697880865
+      ],
+      "spectral_mse": 0.0024739823285372968,
+      "spectral_mae": 0.03374754566098743,
+      "spectral_rmse": 0.04973914282069301,
+      "target_520nm_mae": 0.037300418132701296,
+      "mean_spectrum_mae": 0.033747545660987435,
+      "median_spectrum_mae": 0.02762019724106924,
+      "p90_spectrum_mae": 0.06489137727937086,
+      "max_spectrum_mae": 0.26319656153210963,
+      "spectra_mae_below_0_01_fraction": 0.066,
+      "spectra_mae_below_0_02_fraction": 0.33,
+      "out_of_bounds_thickness_count": 0,
+      "raw_thickness_mae_nm": 10.189587877760172,
+      "raw_thickness_rmse_nm": 16.765729826327558,
+      "raw_out_of_bounds_count": 31
+    },
+    "physics": {
+      "thickness_mae_nm": 33.22077210283512,
+      "thickness_rmse_nm": 48.199981341850346,
+      "thickness_r2": -0.41916857714717426,
+      "layer_mae_nm": [
+        23.207475466824807,
+        35.28870677273725,
+        32.65431889252851,
+        41.732587279249934
+      ],
+      "layer_rmse_nm": [
+        35.87813729936156,
+        52.355301019409374,
+        51.09043120315334,
+        51.52089249993572
+      ],
+      "spectral_mse": 0.003157874840676933,
+      "spectral_mae": 0.0363123789755724,
+      "spectral_rmse": 0.05619497166719575,
+      "target_520nm_mae": 0.03643534867197506,
+      "mean_spectrum_mae": 0.0363123789755724,
+      "median_spectrum_mae": 0.024235865399360533,
+      "p90_spectrum_mae": 0.07835906863021376,
+      "max_spectrum_mae": 0.15600874982418692,
+      "spectra_mae_below_0_01_fraction": 0.144,
+      "spectra_mae_below_0_02_fraction": 0.44,
+      "out_of_bounds_thickness_count": 0
+    },
+    "refined": {
+      "thickness_mae_nm": 2.8185363380444746,
+      "thickness_rmse_nm": 12.403087412759634,
+      "thickness_r2": 0.9060277002633569,
+      "layer_mae_nm": [
+        1.2197148893767777,
+        2.64192348417636,
+        1.1780133739354006,
+        6.234493604689361
+      ],
+      "layer_rmse_nm": [
+        5.517954311432419,
+        10.597516119171031,
+        4.128570086446827,
+        21.34352479878563
+      ],
+      "spectral_mse": 5.897151915349069e-06,
+      "spectral_mae": 0.0005759818324374606,
+      "spectral_rmse": 0.0024284052205818265,
+      "target_520nm_mae": 0.0005124736705337732,
+      "mean_spectrum_mae": 0.0005759818324374605,
+      "median_spectrum_mae": 1.3483921317748152e-11,
+      "p90_spectrum_mae": 0.002052837833259258,
+      "max_spectrum_mae": 0.01867502246321091,
+      "spectra_mae_below_0_01_fraction": 0.996,
+      "spectra_mae_below_0_02_fraction": 1.0,
+      "out_of_bounds_thickness_count": 0
+    },
+    "nearest": {
+      "thickness_mae_nm": 15.654117614126942,
+      "thickness_rmse_nm": 28.931437821068155,
+      "thickness_r2": 0.4886947153928771,
+      "layer_mae_nm": [
+        5.076113783517044,
+        9.953077298003434,
+        5.376772589710013,
+        42.2105067852773
+      ],
+      "layer_rmse_nm": [
+        10.105422239623918,
+        16.87262423033973,
+        9.635511310075044,
+        53.55804600908641
+      ],
+      "spectral_mse": 0.00048130109546626234,
+      "spectral_mae": 0.016651158826324442,
+      "spectral_rmse": 0.021938575511328495,
+      "target_520nm_mae": 0.01734950261560311,
+      "mean_spectrum_mae": 0.016651158826324442,
+      "median_spectrum_mae": 0.016113905161107424,
+      "p90_spectrum_mae": 0.024767451993106544,
+      "max_spectrum_mae": 0.04059524163855563,
+      "spectra_mae_below_0_01_fraction": 0.148,
+      "spectra_mae_below_0_02_fraction": 0.708,
+      "out_of_bounds_thickness_count": 0
+    }
+  },
+  "best_epoch_supervised": 290,
+  "best_epoch_physics": 298,
+  "physics_training_seconds": 26.22654160000002,
+  "refinement_seconds": 12.08620620000056,
+  "refinement_steps": 400,
+  "refinement_learning_rate": 0.02,
+  "refinement_starts": 5,
+  "refinement_start_rule": [
+    "supervised",
+    "physics",
+    "physics+normal(0,5nm)",
+    "physics+normal(0,10nm)",
+    "physics+normal(0,20nm)"
+  ],
+  "refinement_seed": 270070,
+  "refinement_uses_true_thickness": false,
+  "representative_test_indices": [
+    437,
+    291,
+    446
+  ],
+  "failure_test_index": 381,
+  "failure_spectrum_mae": 0.01867502246321091,
+  "independent_10000": {
+    "supervised": {
+      "thickness_mae_nm": 9.75930956196367,
+      "thickness_rmse_nm": 15.894220716473534,
+      "thickness_r2": 0.8469144028580552,
+      "layer_mae_nm": [
+        4.908620082068733,
+        8.365017184506472,
+        4.768619557638715,
+        20.99498142364079
+      ],
+      "layer_rmse_nm": [
+        7.5071018811416765,
+        11.97855731064383,
+        6.53207352680552,
+        27.712715678512954
+      ],
+      "spectral_mse": 0.0020980169556830087,
+      "spectral_mae": 0.031520151482583435,
+      "spectral_rmse": 0.04580411505184888,
+      "target_520nm_mae": 0.035397475353479924,
+      "mean_spectrum_mae": 0.03152015148258344,
+      "median_spectrum_mae": 0.025900588825558287,
+      "p90_spectrum_mae": 0.057610174366248795,
+      "max_spectrum_mae": 0.29194418289399915,
+      "spectra_mae_below_0_01_fraction": 0.0811,
+      "spectra_mae_below_0_02_fraction": 0.3432,
+      "out_of_bounds_thickness_count": 0
+    },
+    "physics": {
+      "thickness_mae_nm": 33.604440397917564,
+      "thickness_rmse_nm": 48.23870817957621,
+      "thickness_r2": -0.41009116464099704,
+      "layer_mae_nm": [
+        23.438190902372533,
+        37.49168681655344,
+        32.47986195949732,
+        41.00802191324682
+      ],
+      "layer_rmse_nm": [
+        36.0598901365711,
+        54.590633641147356,
+        50.16167194352602,
+        50.11232959226471
+      ],
+      "spectral_mse": 0.0033151930596357283,
+      "spectral_mae": 0.036907810170322235,
+      "spectral_rmse": 0.057577713219923284,
+      "target_520nm_mae": 0.03684138680474472,
+      "mean_spectrum_mae": 0.03690781017032223,
+      "median_spectrum_mae": 0.024950804839516873,
+      "p90_spectrum_mae": 0.07889520196339796,
+      "max_spectrum_mae": 0.21616854169078945,
+      "spectra_mae_below_0_01_fraction": 0.1341,
+      "spectra_mae_below_0_02_fraction": 0.442,
+      "out_of_bounds_thickness_count": 0
+    }
+  },
+  "example_candidate_indices": [
+    8667,
+    5008,
+    3125,
+    3874,
+    9518
+  ],
+  "example_selection_rule": "original_forward_Top5_candidates",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "torch": "2.14.0+cpu"
+  },
+  "figure_files": [
+    "figure_1_inverse_workflow.png",
+    "figure_2_inverse_losses.png",
+    "figure_3_inverse_thickness.png",
+    "figure_4_inverse_spectra.png",
+    "figure_5_inverse_training_sizes.png",
+    "figure_6_inverse_distribution_refinement.png",
+    "figure_7_inverse_failure.png"
+  ]
+}

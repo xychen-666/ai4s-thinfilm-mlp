@@ -6,3 +6,4 @@ __pycache__/
 results/data/
 results/models/
 results/histories/
+results/inverse/custom_prediction/

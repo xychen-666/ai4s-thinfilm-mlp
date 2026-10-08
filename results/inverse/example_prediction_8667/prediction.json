@@ -1,0 +1,43 @@
+{
+  "student_name": "陈新堉",
+  "student_id": "2023270069",
+  "input_spectrum_csv": "results\\inverse\\examples\\target_candidate_8667.csv",
+  "method": "physics",
+  "layer_order": [
+    "H",
+    "L",
+    "H",
+    "L"
+  ],
+  "raw_one_pass_thickness_nm": [
+    162.35726928710938,
+    97.65374755859375,
+    165.58441162109375,
+    135.9827880859375
+  ],
+  "feasible_one_pass_thickness_nm": [
+    162.35726928710938,
+    97.65374755859375,
+    165.58441162109375,
+    135.9827880859375
+  ],
+  "raw_out_of_bounds_count": 0,
+  "one_pass_spectral_mae": 0.012397840927820052,
+  "one_pass_spectral_mse": 0.00024115617162258164,
+  "tmm_refinement_applied": true,
+  "refinement_steps": 400,
+  "refinement_learning_rate": 0.02,
+  "selected_refinement_start": 1,
+  "final_thickness_nm": [
+    168.0308712484892,
+    89.46564681621797,
+    168.17302726130944,
+    68.97569825646546
+  ],
+  "final_spectral_mae": 1.771414829819213e-08,
+  "final_spectral_mse": 4.134186812545804e-16,
+  "target_wavelength_nm": 520,
+  "target_reflectance_at_520nm": 0.6542560861850057,
+  "final_tmm_reflectance_at_520nm": 0.6542560569230951,
+  "target_520nm_abs_error": 2.926191067231798e-08
+}

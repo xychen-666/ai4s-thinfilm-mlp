@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "fixed_dataset_samples": 5000,
+  "held_out_targets": 500,
+  "independent_targets": 10000,
+  "tested_models": 5,
+  "tmm_energy_conservation": true,
+  "test_metrics_recomputed": true,
+  "all_final_thicknesses_feasible": true,
+  "refinement_best_loss_monotone": true,
+  "nearest_library_training_only": true
+}

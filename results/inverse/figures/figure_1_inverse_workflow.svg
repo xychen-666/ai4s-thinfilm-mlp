@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="406.8pt" height="109.631344pt" viewBox="0 0 406.8 109.631344" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T21:46:55.731482</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 109.631344 
+L 406.8 109.631344 
+L 406.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 104.16528 54.9416 
+L 116.21808 54.9416 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 104.16528 54.9416 
+L 116.21808 44.00144 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 104.16528 54.9416 
+L 116.21808 33.06128 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 104.16528 44.00144 
+L 116.21808 54.9416 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 104.16528 44.00144 
+L 116.21808 44.00144 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 104.16528 44.00144 
+L 116.21808 33.06128 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 104.16528 33.06128 
+L 116.21808 54.9416 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 104.16528 33.06128 
+L 116.21808 44.00144 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 104.16528 33.06128 
+L 116.21808 33.06128 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 116.21808 54.9416 
+L 128.27088 54.9416 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_11">
+    <path d="M 116.21808 54.9416 
+L 128.27088 44.00144 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_12">
+    <path d="M 116.21808 54.9416 
+L 128.27088 33.06128 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_13">
+    <path d="M 116.21808 44.00144 
+L 128.27088 54.9416 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_14">
+    <path d="M 116.21808 44.00144 
+L 128.27088 44.00144 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_15">
+    <path d="M 116.21808 44.00144 
+L 128.27088 33.06128 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_16">
+    <path d="M 116.21808 33.06128 
+L 128.27088 54.9416 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_17">
+    <path d="M 116.21808 33.06128 
+L 128.27088 44.00144 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_18">
+    <path d="M 116.21808 33.06128 
+L 128.27088 33.06128 
+" clip-path="url(#pacf48b879c)" style="fill: none; stroke: #d5e0e7; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 186.92784 56.76496 
+L 215.05104 56.76496 
+L 215.05104 51.29488 
+L 186.92784 51.29488 
+z
+" clip-path="url(#pacf48b879c)" style="fill: #3879ab"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 186.92784 49.92736 
+L 215.05104 49.92736 
+L 215.05104 44.45728 
+L 186.92784 44.45728 
+z
+" clip-path="url(#pacf48b879c)" style="fill: #cb895e"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 186.92784 43.08976 
+L 215.05104 43.08976 
+L 215.05104 37.61968 
+L 186.92784 37.61968 
+z
+" clip-path="url(#pacf48b879c)" style="fill: #3879ab"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 186.92784 36.25216 
+L 215.05104 36.25216 
+L 215.05104 30.78208 
+L 186.92784 30.78208 
+z
+" clip-path="url(#pacf48b879c)" style="fill: #cb895e"/>
+   </g>
+   <g id="line2d_19">
+    <path d="M 14.97456 52.553437 
+L 15.798168 50.670411 
+L 16.621776 48.864642 
+L 17.445384 47.502352 
+L 18.268992 46.692523 
+L 19.0926 46.428178 
+L 19.916208 46.679473 
+L 20.739816 47.424102 
+L 21.563424 48.638245 
+L 22.387032 50.258422 
+L 23.21064 52.119904 
+L 24.034248 53.902821 
+L 24.857856 55.166571 
+L 25.681464 55.537851 
+L 26.505072 54.941176 
+L 27.32868 53.630992 
+L 28.152288 51.996551 
+L 28.975896 50.359364 
+L 29.799504 48.902904 
+L 30.623112 47.698426 
+L 31.44672 46.753122 
+L 32.270328 46.046111 
+L 33.093936 45.548284 
+L 33.917544 45.231223 
+L 34.741152 45.070308 
+L 35.56476 45.045102 
+L 36.388368 45.13861 
+L 37.211976 45.336109 
+L 38.035584 45.623883 
+L 38.859192 45.98798 
+L 39.6828 46.413114 
+L 40.506408 46.881798 
+L 41.330016 47.373875 
+L 42.153624 47.866618 
+L 42.977232 48.335518 
+L 43.80084 48.755817 
+L 44.624448 49.104603 
+L 45.448056 49.363127 
+L 46.271664 49.518823 
+L 47.095272 49.566547 
+L 47.91888 49.50873 
+" style="fill: none; stroke: #253340; stroke-width: 1.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_20">
+    <path d="M 354.06 52.553437 
+L 354.883608 50.670411 
+L 355.707216 48.864642 
+L 356.530824 47.502352 
+L 357.354432 46.692523 
+L 358.17804 46.428178 
+L 359.001648 46.679473 
+L 359.825256 47.424102 
+L 360.648864 48.638245 
+L 361.472472 50.258422 
+L 362.29608 52.119904 
+L 363.119688 53.902821 
+L 363.943296 55.166571 
+L 364.766904 55.537851 
+L 365.590512 54.941176 
+L 366.41412 53.630992 
+L 367.237728 51.996551 
+L 368.061336 50.359364 
+L 368.884944 48.902904 
+L 369.708552 47.698426 
+L 370.53216 46.753122 
+L 371.355768 46.046111 
+L 372.179376 45.548284 
+L 373.002984 45.231223 
+L 373.826592 45.070308 
+L 374.6502 45.045102 
+L 375.473808 45.13861 
+L 376.297416 45.336109 
+L 377.121024 45.623883 
+L 377.944632 45.98798 
+L 378.76824 46.413114 
+L 379.591848 46.881798 
+L 380.415456 47.373875 
+L 381.239064 47.866618 
+L 382.062672 48.335518 
+L 382.88628 48.755817 
+L 383.709888 49.104603 
+L 384.533496 49.363127 
+L 385.357104 49.518823 
+L 386.180712 49.566547 
+L 387.00432 49.50873 
+" style="fill: none; stroke: #3879ab; stroke-width: 1.6; stroke-linecap: square"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="md4ea5f381c" d="M 0 1.732051 
+C 0.459345 1.732051 0.899939 1.549551 1.224745 1.224745 
+C 1.549551 0.899939 1.732051 0.459345 1.732051 0 
+C 1.732051 -0.459345 1.549551 -0.899939 1.224745 -1.224745 
+C 0.899939 -1.549551 0.459345 -1.732051 0 -1.732051 
+C -0.459345 -1.732051 -0.899939 -1.549551 -1.224745 -1.224745 
+C -1.549551 -0.899939 -1.732051 -0.459345 -1.732051 0 
+C -1.732051 0.459345 -1.549551 0.899939 -1.224745 1.224745 
+C -0.899939 1.549551 -0.459345 1.732051 0 1.732051 
+z
+" style="stroke: #7d9b87"/>
+    </defs>
+    <g clip-path="url(#pacf48b879c)">
+     <use xlink:href="#md4ea5f381c" x="104.16528" y="54.9416" style="fill: #7d9b87; stroke: #7d9b87"/>
+     <use xlink:href="#md4ea5f381c" x="104.16528" y="44.00144" style="fill: #7d9b87; stroke: #7d9b87"/>
+     <use xlink:href="#md4ea5f381c" x="104.16528" y="33.06128" style="fill: #7d9b87; stroke: #7d9b87"/>
+    </g>
+   </g>
+   <g id="PathCollection_2">
+    <g clip-path="url(#pacf48b879c)">
+     <use xlink:href="#md4ea5f381c" x="116.21808" y="54.9416" style="fill: #7d9b87; stroke: #7d9b87"/>
+     <use xlink:href="#md4ea5f381c" x="116.21808" y="44.00144" style="fill: #7d9b87; stroke: #7d9b87"/>
+     <use xlink:href="#md4ea5f381c" x="116.21808" y="33.06128" style="fill: #7d9b87; stroke: #7d9b87"/>
+    </g>
+   </g>
+   <g id="PathCollection_3">
+    <g clip-path="url(#pacf48b879c)">
+     <use xlink:href="#md4ea5f381c" x="128.27088" y="54.9416" style="fill: #7d9b87; stroke: #7d9b87"/>
+     <use xlink:href="#md4ea5f381c" x="128.27088" y="44.00144" style="fill: #7d9b87; stroke: #7d9b87"/>
+     <use xlink:href="#md4ea5f381c" x="128.27088" y="33.06128" style="fill: #7d9b87; stroke: #7d9b87"/>
+    </g>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Microsoft YaHei', 'Noto Sans CJK SC', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #253340" x="31.44672" y="76.82192" transform="rotate(-0 31.44672 76.82192)">目标光谱</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8px; font-family: 'Microsoft YaHei', 'Noto Sans CJK SC', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #697985" x="31.44672" y="90.49712" transform="rotate(-0 31.44672 90.49712)">41 个反射率点</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 54.736049 44.00144 
+Q 72.826317 44.00144 89.574945 44.00144 
+" style="fill: none; stroke: #d5e0e7; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 85.574945 42.00144 
+L 89.574945 44.00144 
+L 85.574945 46.00144 
+z
+" style="fill: #d5e0e7; stroke: #d5e0e7; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Microsoft YaHei', 'Noto Sans CJK SC', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #253340" x="116.21808" y="76.82192" transform="rotate(-0 116.21808 76.82192)">逆向 MLP</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 6.9px; font-family: 'Microsoft YaHei', 'Noto Sans CJK SC', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #697985" x="116.21808" y="90.49712" transform="rotate(-0 116.21808 90.49712)">41 → 128 → 128 → 64 → 4</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 139.507409 44.00144 
+Q 157.597677 44.00144 174.346305 44.00144 
+" style="fill: none; stroke: #d5e0e7; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 170.346305 42.00144 
+L 174.346305 44.00144 
+L 170.346305 46.00144 
+z
+" style="fill: #d5e0e7; stroke: #d5e0e7; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Microsoft YaHei', 'Noto Sans CJK SC', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #253340" x="200.98944" y="76.82192" transform="rotate(-0 200.98944 76.82192)">四层膜厚</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8px; font-family: 'Microsoft YaHei', 'Noto Sans CJK SC', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #697985" x="200.98944" y="90.49712" transform="rotate(-0 200.98944 90.49712)">40–180 nm</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 224.278769 44.00144 
+Q 242.369037 44.00144 259.117665 44.00144 
+" style="fill: none; stroke: #d5e0e7; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 255.117665 42.00144 
+L 259.117665 44.00144 
+L 255.117665 46.00144 
+z
+" style="fill: #d5e0e7; stroke: #d5e0e7; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Microsoft YaHei', 'Noto Sans CJK SC', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #253340" x="285.7608" y="76.82192" transform="rotate(-0 285.7608 76.82192)">TMM 回算</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8px; font-family: 'Microsoft YaHei', 'Noto Sans CJK SC', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #697985" x="285.7608" y="90.49712" transform="rotate(-0 285.7608 90.49712)">H / L / H / L</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 309.050129 44.00144 
+Q 327.140397 44.00144 343.889025 44.00144 
+" style="fill: none; stroke: #d5e0e7; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 339.889025 42.00144 
+L 343.889025 44.00144 
+L 339.889025 46.00144 
+z
+" style="fill: #d5e0e7; stroke: #d5e0e7; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Microsoft YaHei', 'Noto Sans CJK SC', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #253340" x="370.53216" y="76.82192" transform="rotate(-0 370.53216 76.82192)">重建光谱</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8px; font-family: 'Microsoft YaHei', 'Noto Sans CJK SC', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #697985" x="370.53216" y="90.49712" transform="rotate(-0 370.53216 90.49712)">与目标逐点比较</text>
+   </g>
+   <g id="text_11">
+    <!-- $M_1M_2M_3M_4$ -->
+    <g style="fill: #253340" transform="translate(253.6608 46.897162)">
+     <text>
+      <tspan x="0" y="-0.25" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #253340">M</tspan>
+      <tspan x="16.025977" y="-0.25" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #253340">M</tspan>
+      <tspan x="32.051953" y="-0.25" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #253340">M</tspan>
+      <tspan x="48.07793" y="-0.25" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #253340">M</tspan>
+      <tspan x="10.353516" y="1.549994" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #253340">1</tspan>
+      <tspan x="26.379492" y="1.549994" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #253340">2</tspan>
+      <tspan x="42.405469" y="1.549994" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #253340">3</tspan>
+      <tspan x="58.431445" y="1.549994" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #253340">4</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 8px; font-family: 'Microsoft YaHei', 'Noto Sans CJK SC', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #697985" x="203.4" y="105.084" transform="rotate(-0 203.4 105.084)">直接逆向训练  ·  可微物理约束  ·  膜厚局部优化</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pacf48b879c">
+   <rect x="2.52" y="2.52" width="401.76" height="102.564"/>
+  </clipPath>
+ </defs>
+</svg>

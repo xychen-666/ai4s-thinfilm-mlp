@@ -106,3 +106,73 @@ macOS/Linux 可把上面后两条命令中的 Python 路径替换为 `.venv/bin/
 | 辅助图：Top 10 预测与验证 | `results/figures/screening_audit.png` |
 
 模型输出层为线性层，因此少量 MLP 预测值理论上可能越出 `[0,1]`；结果表记录了这一数量。物理结论均基于 TMM 验证。计时随机器和软件环境变化，不能直接当作通用加速比；评估筛选质量请看 TMM 核验值和全候选池审计。
+
+## 附加实验：目标光谱到膜厚的反向预测
+
+已新增反向任务：输入400–800 nm每10 nm一点的41点目标反射率，输出从空气侧依次排列的四层膜厚。物理设置、原5000组数据、4000/500/500划分、随机种子和训练超参数均沿用正向实验。
+
+直接反向网络为`41–128–128–64–4`，隐藏层ReLU、线性输出；膜厚标签按原公式归一化。四组训练规模仍为500/1000/2000/4000，Adam学习率0.001、batch=128、300 epochs，验证集选最佳权重。原始膜厚输出及越界数被保存；用于合法结构的输出投影到[40,180] nm，投影后的光谱由真实TMM回算。
+
+另外比较物理约束反向MLP（tanh限制膜厚范围，使用精确可微TMM光谱损失、未使用膜厚标签监督）、MLP多起点TMM优化，以及仅检索训练库的光谱最近邻。MLP一次推理和后续优化分别报告。
+
+### 反向任务已运行结果
+
+固定500组测试目标：
+
+| 方法 | 膜厚MAE (nm) | TMM回算光谱MAE | 520 nm MAE |
+| --- | ---: | ---: | ---: |
+| 直接反向MLP（边界投影） | 10.0945 | 0.033748 | 0.037300 |
+| 物理约束MLP（一次推理） | 33.2208 | 0.036312 | 0.036435 |
+| MLP多起点＋TMM优化 | 2.8185 | 0.000576 | 0.000512 |
+| 训练库光谱最近邻 | 15.6541 | 0.016651 | 0.017350 |
+
+直接模型原始膜厚MAE为10.1896 nm，2000个膜厚值中31个越界。本轮物理约束MLP没有改善整体光谱MAE，最近邻也优于两种MLP的一次推理均值。组合优化的结果来自5个MLP起点及400步TMM优化，不能当作神经网络一次推理精度。优化后99.6%的测试目标光谱MAE小于0.01；目标光谱均来自相同模型生成的可实现结构，结论不等于实验测量精度或任意目标可实现性。
+
+### 直接使用预训练模型
+
+仓库已包含本次实跑的5个反向模型权重、原始数据数组和训练记录，克隆后无需重新训练即可预测。安装依赖后，在仓库根目录运行：
+
+```powershell
+python -m pip install -r requirements.txt
+python -m thinfilm.inverse_predict --spectrum results/inverse/examples/target_candidate_8667.csv --output results/inverse/custom_prediction --refine-steps 400
+```
+
+上述实例以候选8667的完整目标光谱为输入，优化后四层膜厚约为`[168.0309, 89.4656, 168.1730, 68.9757] nm`，回算光谱MAE为`1.7714e-8`。输出目录包含膜厚及误差JSON、CSV和光谱比较图。替换`--spectrum`路径即可使用自己的目标光谱；使用`--method supervised`可选择直接监督模型，默认使用物理约束模型。省略`--refine-steps`即可单独评价MLP一次推理。
+
+### 重新训练与独立复核
+
+```powershell
+python -m thinfilm.inverse_experiment --source results --output results/inverse
+python -m thinfilm.inverse_verify --output results/inverse
+python -m thinfilm.inverse_predict --spectrum results/inverse/examples/target_candidate_8667.csv --output results/inverse/custom_prediction --refine-steps 400
+```
+
+自定义目标CSV必须有`wavelength_nm,reflectance`两列，按400、410、…、800 nm顺序恰好41行，反射率为[0,1]中的有限值。省略`--refine-steps`时只计算一次反向MLP推理与TMM回算；加该参数时输出优化后的结构，同时保存一次推理的原始结果。
+
+`results/inverse/models/`、`data/`、`histories/`已随反向实验提交，分别包含5个预训练权重、完整数组及逐轮损失。重新训练时将按固定种子生成并覆盖相应结果。单波长反射率不能唯一约束四个膜厚，本接口接收完整41点光谱。逆问题可能存在近似等价膜厚，评价需要同时看膜厚误差和回算光谱误差。
+
+| 新增路径 | 内容 |
+| --- | --- |
+| `thinfilm/inverse.py` | 直接/物理反向MLP、精确可微TMM、有边界多起点优化 |
+| `thinfilm/inverse_experiment.py` | 5个模型训练、固定测试与10000组独立目标评价 |
+| `thinfilm/inverse_predict.py` | 读取自定义光谱CSV，给出膜厚与光谱复核 |
+| `thinfilm/inverse_verify.py` | 从权重及数组独立重算全部结果 |
+| `thinfilm/inverse_plots.py` | 七幅中文图的600 dpi PNG、PDF、SVG |
+| `tests/test_inverse.py` | 物理解析极限、全部四层梯度、约束与优化核验 |
+| `results/inverse/附加题_反向预测结果.md` | 完整中文实验结果与图表 |
+| `results/inverse/summary.json` | 精确指标、训练参数和运行环境 |
+| `results/inverse/test_predictions.csv` | 全部500个测试目标的四方法逐样本结果 |
+| `results/inverse/models/` | 4种训练规模的直接MLP和4000组训练的物理约束MLP权重 |
+| `results/inverse/data/` | 原5000组数据、500个测试目标结果与10000组独立目标 |
+| `results/inverse/histories/` | 5个模型的原始300轮训练与验证损失 |
+| `results/inverse/figures_publication/` | 后续整理的OptoGPT风格流程图及最差案例排版图 |
+
+### 反向实验图示
+
+以下流程图为概念示意，最差案例的数值曲线与膜厚由真实测试样本381重新绘制。
+
+![反向任务流程](results/inverse/figures_publication/inverse_workflow_optogpt.png)
+
+![最差测试样本381](results/inverse/figures_publication/inverse_failure_381.png)
+
+其余训练损失、数据量效应、膜厚恢复、代表光谱及误差分布图见[`results/inverse/figures`](results/inverse/figures)。
